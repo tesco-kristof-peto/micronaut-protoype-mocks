@@ -6,13 +6,10 @@ import io.micronaut.context.annotation.Prototype;
 @Prototype
 public class Bar {
 
-    private final String realOrFake;
-
-    public Bar(@Parameter String realOrFake) {
-        this.realOrFake = realOrFake;
+    public Bar() {
     }
 
     public String getRealOrFake() {
-        return realOrFake;
+        return "real";
     }
 }

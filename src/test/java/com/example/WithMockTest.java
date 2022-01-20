@@ -21,6 +21,11 @@ class WithMockTest {
 
     @MockBean(Bar.class)
     Bar fakeBar() {
-        return new Bar("fake");
+        return new Bar(){
+            @Override
+            public String getRealOrFake() {
+                return "fake";
+            }
+        };
     }
 }

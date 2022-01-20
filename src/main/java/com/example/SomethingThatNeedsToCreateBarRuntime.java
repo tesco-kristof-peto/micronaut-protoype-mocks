@@ -11,6 +11,6 @@ public class SomethingThatNeedsToCreateBarRuntime {
     BeanContext beanContext;
 
     Bar createBar() {
-        return beanContext.createBean(Bar.class, "real");
+        return beanContext.createBean(Bar.class);
     }
 }
