@@ -10,6 +10,9 @@ public class SomethingThatNeedsToCreateBarRuntime {
     @Inject
     BeanContext beanContext;
 
+    @Inject
+    Bar directInject;
+
     Bar createBar() {
         return beanContext.createBean(Bar.class);
     }
