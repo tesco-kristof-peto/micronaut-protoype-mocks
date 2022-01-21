@@ -4,12 +4,12 @@ import io.micronaut.context.annotation.Parameter;
 import io.micronaut.context.annotation.Prototype;
 
 @Prototype
-public class Bar {
+class Bar {
 
-    public Bar() {
+    Bar() {
     }
 
-    public String getRealOrFake() {
+    String getRealOrFake() {
         return "real";
     }
 }
